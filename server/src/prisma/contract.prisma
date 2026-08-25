@@ -1,0 +1,7 @@
+// use prisma-next
+
+model User {
+  id        Uuid     @id @default(uuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
